@@ -1,6 +1,6 @@
 import {
-  BrowserRouter as Router,
-  Switch,
+  BrowserRouter,
+  Routes,
   Route,
 } from "react-router-dom";
 
@@ -16,27 +16,17 @@ import Project from "./pages/project/Project";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <BrowserRouter>
         <div className="container">
-          <Switch>
-          <Route path="/">
-            <Dashboard />
-          </Route>
-          <Route path="/create">
-            <Create />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/signup">
-            <Signup />
-          </Route>
-          <Route path="/projects/:id">
-            <Project />
-          </Route>
-          </Switch>
+          <Routes>
+            <Route path="/"  element={<Dashboard />} />
+            <Route path="/create" element={<Create />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/projects/:id" element={<Project />} />
+          </Routes>
         </div>
-      </Router>
+      </BrowserRouter>
     </div>
 
   );

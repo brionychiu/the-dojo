@@ -1,4 +1,4 @@
-// css
+// styles 
 import './Login.css'
 
 const Login = () => {

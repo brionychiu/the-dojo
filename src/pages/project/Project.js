@@ -1,7 +1,7 @@
-// css
-import './Prject.css'
+// styles 
+import './Project.css'
 
-const Prject = () => {
+const Project = () => {
     return ( 
         <div>
             
@@ -9,4 +9,4 @@ const Prject = () => {
      );
 }
  
-export default Prject;
+export default Project;
