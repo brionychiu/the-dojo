@@ -2,7 +2,7 @@
 import './Create.css'
 
 const Create = () => {
-    return (  <div></div>);
+    return (  <div>create</div>);
 }
  
 export default Create;
