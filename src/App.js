@@ -31,8 +31,8 @@ function App() {
             <Route path="/create" element={user? <Create />:<Navigate to="/login"/>} />
             <Route path="/projects/:id" element={user? <Project />:<Navigate to="/login"/>} />
             
-            <Route path="/login" element={user? <Login />:<Navigate to="/"/>} />
-            {!user && <Route path="/signup" element={user? <Signup />:<Navigate to="/"/>} />}
+            <Route path="/login" element={!user? <Login />:<Navigate to="/"/>} />
+            <Route path="/signup" element={!user? <Signup />:<Navigate to="/"/>} />
             
           </Routes>
         </div>
